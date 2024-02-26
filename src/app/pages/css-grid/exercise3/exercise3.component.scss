@@ -1,0 +1,16 @@
+//autofit se acomoda al espacio que tiene  disponible en la pantalla puede acomodar el tamano de su contenido para ocupar todo el espacio
+// autofill rellena el espacio pero no deforma el tamano de su contenido para llenar el espacio
+div {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+    // max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

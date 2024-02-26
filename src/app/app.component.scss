@@ -1,0 +1,54 @@
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    min-height: 100vh;
+    background-color: var(--pri1);
+    align-items: start;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: ".  title ." ". main-menu ." ". router .";
+}
+
+.main-menu {
+    display: grid;
+    gap: 16px;
+    grid-area: main-menu;
+    font-size: 25px;
+}
+
+.title {
+    color: white;
+    justify-self: center;
+    align-self: center;
+    height: 70px;
+    grid-area: title;
+}
+
+.router {
+    margin-top: 5%;
+    display: grid;
+    grid-area: router;
+}
+
+app-navbar {
+    align-items: start !important;
+}
+
+app-footer {
+    margin-top: 30px;
+}
+
+a {
+    font-family: "Pacifico";
+    font-weight: 200;
+}
+
+@media (width<500px) {
+    .main-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

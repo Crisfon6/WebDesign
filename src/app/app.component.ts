@@ -1,14 +1,33 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouteMenu } from './interfaces/routeMenu.interface';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import {RoundedButtonComponent} from 'ngx-components-lib-cf6';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, RouterLink,FooterComponent,NavbarComponent,RoundedButtonComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'web-design';
+  topicsMenu: RouteMenu[] = [
+    {
+      route: 'Css-Grid',
+      name: 'Css Grid',
+    },
+    {
+      route: 'Flex Box',
+      name: 'Flexbox',
+    },
+
+  ];
+get style():Record<string,string>{
+    return {'grid-template-columns': `repeat(${this.topicsMenu.length}, 1fr)`}
+}
+
+
 }

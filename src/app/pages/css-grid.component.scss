@@ -1,0 +1,39 @@
+.background {
+    background: var(--shadow1);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--pri6);
+}
+
+.description {
+    text-align: justify;
+    color: var(--pri6);
+}
+
+.main-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    grid-area: main-menu;
+    font-size: 25px;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.content-exercise {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+}
+
+@media (width<500px) {
+    .main-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

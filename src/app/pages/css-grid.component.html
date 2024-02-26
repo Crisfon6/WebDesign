@@ -1,0 +1,26 @@
+<div class="background">
+    <h1 class="title">What is CSS Grid?</h1>
+    <p class="description open-sans">
+        CSS Grid is a layout system in CSS (Cascading Style Sheets) that allows web developers to create complex grid-based layouts with ease. It provides a two-dimensional grid-based layout system, with rows and columns, making it easier to design web pages
+        without having to rely on floats and positioning.
+    </p>
+</div>
+
+
+<div class="main-menu">
+
+    @for (section of sections; track $index) {
+    <lib-rounded-button [routerLink]="section.route" [text]="section.name" class="pacifico-regular" [background]="'#8338ec'">
+
+    </lib-rounded-button>
+
+    }
+
+</div>
+<div>
+
+</div>
+<div class="content-exercise">
+    <router-outlet></router-outlet>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.2/purify.min.js"></script>

@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --pri1: #ffbe0b;
+    --pri2: #fb5607;
+    --pri3: #ff006e;
+    --pri4: #8338ec;
+    --pri5: #3884ff;
+    --pri6: white;
+    --shadow1: rgba(56, 132, 255, 0.8);
+    ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

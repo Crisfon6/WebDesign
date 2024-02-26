@@ -1,0 +1,13 @@
+.content {
+    display: grid;
+    background: var(--pri5);
+    height: 60px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+h1 {
+    margin: 0;
+    cursor: pointer;
+}
