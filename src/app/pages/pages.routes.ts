@@ -5,7 +5,11 @@ import { Exercise3Component } from './css-grid/exercise3/exercise3.component';
 import { Exercise4Component } from './css-grid/exercise4/exercise4.component';
 import { Exercise5Component } from './css-grid/exercise5/exercise5.component';
 import { Exercise6Component } from './css-grid/exercise6/exercise6.component';
-import { CssGridComponent } from './css-grid.component';
+import { CssGridComponent } from './css-grid/css-grid.component';
+import { SassComponent } from './sass/sass.component';
+import { CssComponent } from './css/css.component';
+import { HtmlComponent } from './html/html.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
 
 export const routes: Routes = [
   {
@@ -38,6 +42,14 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+  path: 'flexbox',
+  component: FlexboxComponent
+  },
+
+  {
+    path: 'sass',
+    component: SassComponent},
   {
     path: '**',
     redirectTo: 'css-grid',

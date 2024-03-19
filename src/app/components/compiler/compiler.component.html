@@ -1,0 +1,13 @@
+<div class="container">
+    <div>
+        <h1 class="pacifico-regular">Html code</h1>
+        <lib-code-editor (code)="code($event,'html')" id="html" [language]="'Html'"> </lib-code-editor>
+
+    </div>
+    <div>
+        <h1 class="pacifico-regular">CSS code</h1>
+        <lib-code-editor (code)="code($event,'css')" id="css" [language]="'Css'"></lib-code-editor>
+
+    </div>
+    <lib-code-render [html]="html+css"></lib-code-render>
+</div>

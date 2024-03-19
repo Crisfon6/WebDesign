@@ -1,0 +1,85 @@
+    @import 'partials/variables';
+    @import 'partials/mixins';
+    @import 'partials/breakpoints';
+    @import 'partials/functions';
+    .header {
+        ul {
+            @include flex-between;
+            list-style-type: none;
+            background-color: var(--pri4);
+            color: $company-color;
+            padding: $padding-default;
+            font-size: em(24px);
+        }
+    }
+    
+    main {
+        padding: $padding-default;
+        .boxes {
+            @include flex-between;
+            flex-direction: column;
+            @include display-medium {
+                flex-direction: row;
+            }
+            .box {
+                @include box(200px, 200px);
+                // background-color: green;
+            }
+        }
+        p {
+            font-weight: weight(normal);
+        }
+        .critical-error {
+            border: 2px solid $text-danger;
+        }
+        .large {
+            font-size: 2rem;
+        }
+        .error {
+            @extend .critical-error;
+            @extend .large;
+            color: $text-danger;
+        }
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: $company-color;
+        color: #fff;
+        padding: $padding-default;
+        width: 100%;
+    }
+    
+    @include italic-links;
+    // @for $i from 1 through 4 {
+    @for $i from 1 to 5 {
+        .li-#{$i} {
+            @if $i %2==0 {
+                color: $text-danger;
+            }
+            @else {
+                color: $company-color;
+            }
+            @if $i==4 {
+                background-color: green;
+            }
+        }
+    }
+    
+    $boxes-colors: 'orange',
+    'blue',
+    'yellow';
+    @each $box-color in $boxes-colors {
+        .box-#{$box-color} {
+            background-color: $box-color;
+        }
+    }
+    
+    $font-sizes: ('tiny':8px, 'small': 10px, 'normal' :14px, 'large':18px);
+    @each $key,
+    $value in $font-sizes {
+        .#{$key} {
+            font-size: $value;
+        }
+    }

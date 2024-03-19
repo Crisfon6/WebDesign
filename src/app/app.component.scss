@@ -18,6 +18,8 @@
     gap: 16px;
     grid-area: main-menu;
     font-size: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3rem;
 }
 
 .title {
@@ -49,6 +51,6 @@ a {
 
 @media (width<500px) {
     .main-menu {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }

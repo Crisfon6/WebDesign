@@ -1,0 +1,30 @@
+{
+    "exercises": [{
+            "id": "1",
+            "html": "<section class='container-result'>        <div>1dasdasdashgrunraoeide</div>        <div>2</div>        <div>3</div>        <div>4</div>        <div>5</div>        <div>6</div>        <div>7</div>    </section>",
+            "css": ".container-result {          background: lightsalmon;          border: 3px solid black;          border-radius: 10px;          display: grid;          grid-template-columns: minmax(100px, 1fr) 1fr 1fr;          grid-template-rows: repeat(3, 100px);} .container-result div {              background: lightblue;              border: 2px solid #08f;              border-radius: 6px;              margin-bottom: 5%;          }          @media (width<500px) {              .container {                  grid-template-columns: 1fr;              }          }"
+        },
+        {
+            "id": "2",
+            "code": "a title"
+        },
+        {
+            "id": "3",
+            "code": "a title"
+        }
+    ],
+    "comments": [{
+            "id": "1",
+            "text": "a comment about post 1",
+            "postId": "1"
+        },
+        {
+            "id": "2",
+            "text": "another comment about post 1",
+            "postId": "1"
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}

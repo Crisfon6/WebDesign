@@ -1,0 +1,45 @@
+h1 {
+    color: rgba(34, 216, 201, 0.945);
+    // color: hsl(60, 60%, 10%);
+    // color: hsl(348 83% 44% / 50%);
+    border-width: 3px;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+body {
+    background: pink !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link {
+    color: rgb(236, 50, 3);
+    display: block;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: yellow;
+    // border: 1px solid red;
+    outline: 3px solid black;
+}
+
+.link:active {
+    outline: 3px solid yellow;
+}
+
+.description {
+    border: 1px solid red;
+}
+
+.description strong {
+    border: inherit;
+}
+
+li:first-child {
+    color: aqua;
+}
+
+li:last-child {
+    color: brown;
+}

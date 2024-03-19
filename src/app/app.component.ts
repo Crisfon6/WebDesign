@@ -4,7 +4,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { RouteMenu } from './interfaces/routeMenu.interface';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import {RoundedButtonComponent} from 'ngx-components-lib-cf6';
+import { RoundedButtonComponent } from 'ngx-components-lib-cf6';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,11 +19,18 @@ export class AppComponent {
     {
       route: 'Css-Grid',
       name: 'Css Grid',
+      icon: 'dashboard'
     },
     {
-      route: 'Flex Box',
+      route: 'flexbox',
       name: 'Flexbox',
+      icon: 'aspect_ratio'
     },
+    {
+      route: 'sass',
+      name: 'Sass',
+      icon: 'description'
+    }
 
   ];
 get style():Record<string,string>{

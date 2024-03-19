@@ -1,0 +1,24 @@
+// @media only screen and(max-width:320px) {}
+@mixin display-tiny {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin display-small {
+    @media only screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin display-medium {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin display-large {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}

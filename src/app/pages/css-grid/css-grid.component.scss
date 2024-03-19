@@ -22,18 +22,27 @@
     gap: 16px;
     grid-area: main-menu;
     font-size: 25px;
-    margin-top: 5%;
     justify-content: center;
 }
 
 .content-exercise {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 5%;
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.center {
+    align-self: center;
 }
 
 @media (width<500px) {
     .main-menu {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }

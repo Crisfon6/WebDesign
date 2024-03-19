@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { RouteMenu } from '../interfaces/routeMenu.interface';
+import { RouteMenu } from '../../interfaces/routeMenu.interface';
 import { RoundedButtonComponent } from 'ngx-components-lib-cf6';
 
 
