@@ -1,0 +1,15 @@
+<div class="container">
+    @for (cardInfo of cardsInfo; track $index) {
+
+    <app-card [cardInfo]="cardInfo"></app-card>
+    }
+    <h1 class="pacifico-regular title">Topics</h1>
+    <div class="menu">
+        @for (topic of topicsMenu; track $index) {
+        <lib-rounded-button [routerLink]="topic.route" [text]="topic.name" class="pacifico-regular" [background]="'#8338ec'" [icon]="topic.icon!">
+        </lib-rounded-button>
+
+        }
+    </div>
+    <router-outlet></router-outlet>
+</div>

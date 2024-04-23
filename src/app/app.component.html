@@ -1,21 +1,11 @@
-<div class="grid-content">
-    <app-navbar></app-navbar>
-
-    <div class="content">
-        <h1 class="pacifico-regular title">Topics</h1>
-        <div class="main-menu">
-
-            @for (topic of topicsMenu; track $index) {
-            <lib-rounded-button [routerLink]="topic.route" [text]="topic.name" class="pacifico-regular" [background]="'#8338ec'" [icon]="topic.icon!">
-
-            </lib-rounded-button>
-
-            }
-
-        </div>
-        <div class="router">
-            <router-outlet></router-outlet>
-        </div>
+<div class="container">
+    <div class="header">
+        <app-navbar></app-navbar>
     </div>
-    <app-footer></app-footer>
+    <div class="body">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
 </div>

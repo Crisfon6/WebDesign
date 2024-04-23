@@ -7,52 +7,61 @@ import { Exercise5Component } from './css-grid/exercise5/exercise5.component';
 import { Exercise6Component } from './css-grid/exercise6/exercise6.component';
 import { CssGridComponent } from './css-grid/css-grid.component';
 import { SassComponent } from './sass/sass.component';
-import { CssComponent } from './css/css.component';
-import { HtmlComponent } from './html/html.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
+import { IndexComponent } from './index/index.component';
 
 export const routes: Routes = [
   {
-    path: 'css-grid',
-    component: CssGridComponent,
-    children: [
+    path: '',
+    component: IndexComponent,
+    children:[
       {
-        path: 'exercise1',
-        component: Exercise1Component,
+        path: 'css-grid',
+        component: CssGridComponent,
+        children: [
+          {
+            path: 'exercise1',
+            component: Exercise1Component,
+          },
+          {
+            path: 'exercise2',
+            component: Exercise2Component,
+          },
+          {
+            path: 'exercise3',
+            component: Exercise3Component,
+          },
+          {
+            path: 'exercise4',
+            component: Exercise4Component,
+          },
+          {
+            path: 'exercise5',
+            component: Exercise5Component,
+          },
+          {
+            path: 'exercise6',
+            component: Exercise6Component,
+          },
+        ],
       },
       {
-        path: 'exercise2',
-        component: Exercise2Component,
+        path: 'flexbox',
+        component: FlexboxComponent,
       },
+
       {
-        path: 'exercise3',
-        component: Exercise3Component,
+        path: 'sass',
+        component: SassComponent,
       },
-      {
-        path: 'exercise4',
-        component: Exercise4Component,
-      },
-      {
-        path: 'exercise5',
-        component: Exercise5Component,
-      },
-      {
-        path: 'exercise6',
-        component: Exercise6Component,
-      },
-    ],
-  },
-  {
-  path: 'flexbox',
-  component: FlexboxComponent
+    ]
   },
 
-  {
-    path: 'sass',
-    component: SassComponent},
+
+
   {
     path: '**',
-    redirectTo: 'css-grid',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ];

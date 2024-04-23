@@ -1,48 +1,7 @@
-.background {
-    background: var(--shadow1);
-    padding: 5%;
-    border-radius: 10px;
+lib-rounded-button {
+    height: 50px;
 }
 
-.title {
-    font-family: "Pacifico", cursive;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--pri6);
-}
-
-.description {
-    text-align: justify;
-    color: var(--pri6);
-}
-
-.main-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    grid-area: main-menu;
-    font-size: 25px;
-    justify-content: center;
-}
-
-.content-exercise {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 2rem;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-.center {
-    align-self: center;
-}
-
-@media (width<500px) {
-    .main-menu {
-        grid-template-columns: repeat(1, 1fr);
-    }
+title {
+    text-align: center;
 }

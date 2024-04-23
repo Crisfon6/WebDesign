@@ -1,13 +1,10 @@
-.content {
-    display: grid;
-    background: var(--pri5);
-    height: 60px;
-    align-items: center;
-    justify-items: center;
+.header {
+    background-color: var(--pri5);
     border-radius: 0 0 10px 10px;
+    text-align: center;
 }
 
 h1 {
-    margin: 0;
+    padding: 0.5rem;
     cursor: pointer;
 }
