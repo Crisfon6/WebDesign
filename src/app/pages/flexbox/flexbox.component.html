@@ -1,45 +1,22 @@
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Menu 1</a></li>
-            <!-- <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li> -->
-            <!-- <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 2</a></li> -->
-            <li><a href="#">Menu 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vitae est doloribus, vero hic quaerat quod eos id obcaecati. Soluta.</a></li>
-            <li><a href="#">Menu 3</a></li>
-        </ul>
-    </nav>
+<app-card [cardInfo]="cardInfo"></app-card>
 
-</body>
+<article class="content">
+
+
+    <h2 class="title">Exercises</h2>
+    <div class="menu">
+
+        @for (section of sections; track $index) {
+        <lib-rounded-button [routerLink]="section.route" [text]="section.name" class="pacifico-regular" [background]="'#8338ec'" [icon]="section.icon!">
+
+        </lib-rounded-button>
+
+        }
+
+    </div>
+
+    <div class="content-exercise">
+        <router-outlet></router-outlet>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.2/purify.min.js"></script>
+</article>

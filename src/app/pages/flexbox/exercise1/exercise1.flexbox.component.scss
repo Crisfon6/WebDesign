@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul {
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+}
+
+li {
+    background-color: chocolate;
+    color: white;
+    border: dashed black;
+    padding: .3rem .7rem;
+}
+
+li:nth-child(2) {
+    font-size: 2rem;
+}
+
+//justify-content : acomoda los elementos en el eje principal.
+//align-items : acomoda los elementos en el eje cruzado(el secundario)
+// align-content: acomoda el espacio residual entra la filas de elementos creados con el wrap
+//la palabra safe ayuda a no ocultar informacion de nuestro html cuando acomodemos elementos
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: safe center;
+    row-gap: 0.3rem;
+    column-gap: 0.3rem;
+    // align-items: center;
+    // justify-content: center;
+    // align-items: baseline; //baseline acomoda los elementos a la linea base de la fuente
+    // align-items: last baseline; //baseline acomoda los elementos a la linea base de la fuente de la ultima fila de la frase
+    // align-items: flex-end;
+    // align-items: flex-start;
+    // flex-flow: row wrap; //row specify the principal axis  wrap use for use multiples lines
+    // flex-wrap: wrap-reverse;
+    // justify-content: space-evenly;
+    // justify-content: start; //esto siempre pone a la izquierda del navegador
+    // justify-content: flex-start; //esto lo pone al inicio del eje principal del flex
+    // justify-content: space-between; //parte el espacio residual entre  los elementos
+    // justify-content: space-around; //distribuye el espacio  en todo el contenedor, al inicio y al final pone la mitad del espacio que pondria entre cada elemento
+    // justify-content: space-evenly; //pone el mismo espacio al inicio al final y entre elementos
+}
