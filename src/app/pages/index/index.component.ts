@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../../components/card/card.component';
-import { Card } from '../../components/interfaces/card.interface';
 import { RouteMenu } from '../../interfaces/routeMenu.interface';
-import { RoundedButtonComponent } from 'ngx-components-lib-cf6';
+import { Card, CardComponent, RoundedButtonComponent } from 'ngx-components-lib-cf6';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({

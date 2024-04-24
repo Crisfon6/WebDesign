@@ -1,14 +1,13 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { RouteMenu } from '../../interfaces/routeMenu.interface';
-import { RoundedButtonComponent } from 'ngx-components-lib-cf6';
-import { CardComponent } from '../../components/card/card.component';
-import { Card } from '../../components/interfaces/card.interface';
+import { Card, CardComponent, RoundedButtonComponent, } from 'ngx-components-lib-cf6';
+
 
 @Component({
   selector: 'app-css-grid',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RoundedButtonComponent, CardComponent],
+  imports: [RouterOutlet, RouterLink, RoundedButtonComponent,CardComponent],
   templateUrl: './css-grid.component.html',
   styleUrl: './css-grid.component.scss',
 })

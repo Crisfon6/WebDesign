@@ -4,8 +4,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { RouteMenu } from './interfaces/routeMenu.interface';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { RoundedButtonComponent } from 'ngx-components-lib-cf6';
-import { CardComponent } from './components/card/card.component';
+import {RoundedButtonComponent,CardComponent} from 'ngx-components-lib-cf6';
 
 @Component({
   selector: 'app-root',
