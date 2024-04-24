@@ -11,9 +11,8 @@
 .body {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    width: 100%;
     align-content: start;
-    padding-top: 15px;
+    margin-bottom: 25px;
 }
 
 .footer {}

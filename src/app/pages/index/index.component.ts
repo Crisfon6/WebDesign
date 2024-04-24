@@ -36,11 +36,11 @@ export class IndexComponent {
       name: 'Flexbox',
       icon: 'aspect_ratio'
     },
-    // {
-    //   route: 'sass',
-    //   name: 'Sass',
-    //   icon: 'description'
-    // }
+    {
+      route: 'flex-grid',
+      name: 'Flexbox & Css Grid',
+      icon: 'description'
+    }
 
   ];
 }

@@ -23,7 +23,6 @@ export class FlexboxComponent {
     { name: 'Exercise 3', route: 'exercise3',icon: 'dashboard' },
     { name: 'Exercise 4', route: 'exercise4',icon: 'dashboard' },
     { name: 'Exercise 5', route: 'exercise5',icon: 'dashboard' },
-    { name: 'Exercise 6', route: 'exercise6',icon: 'dashboard' },
   ];
   html = `
   <div class="background">

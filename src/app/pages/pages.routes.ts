@@ -14,7 +14,8 @@ import { Exercise2FlexboxComponent } from './flexbox/exercise2/exercise2.flexbox
 import { Exercise3FlexboxComponent } from './flexbox/exercise3/exercise3.flexbox.component';
 import { Exercise4FlexboxComponent } from './flexbox/exercise4/exercise4.flexbox.component';
 import { Exercise5FlexboxComponent } from './flexbox/exercise5/exercise5.flexbox.component';
-import { Exercise6FlexboxComponent } from './flexbox/exercise6/exercise6.flexbox.component';
+
+import { FlexGridComponent } from './flex-grid/flex-grid.component';
 
 export const routes: Routes = [
   {
@@ -75,17 +76,13 @@ export const routes: Routes = [
             path: 'exercise5',
             component: Exercise5FlexboxComponent,
           },
-          {
-            path: 'exercise6',
-            component: Exercise6FlexboxComponent,
-          },
         ],
       },
-
       {
-        path: 'sass',
-        component: SassComponent,
-      },
+        path:'flex-grid',
+        component: FlexGridComponent
+      }
+
     ]
   },
 
