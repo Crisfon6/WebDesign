@@ -1,9 +1,9 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(75px, auto) 1fr minmax(40px, auto);
-    width: 100vw;
-    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 100%;
 }
 
 .header {}
@@ -17,10 +17,8 @@
 
 .footer {}
 
-router-outlet {}
-
 @media (width<500px) {
-    .body {
-        grid-template-columns: 5% 1fr 5%;
-    }
+    // .body {
+    //     grid-template-columns: 5% 1fr 5%;
+    // }
 }

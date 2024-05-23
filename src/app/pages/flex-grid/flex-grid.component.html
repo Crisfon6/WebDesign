@@ -1,0 +1,17 @@
+<div class="container">
+
+
+  <app-card [cardInfo]="topic.card"></app-card>
+
+  <article class="content">
+
+
+    <h2 class="title">Exercises</h2>
+
+    @if (showIde) {
+    <app-ide [topic]="topicName" [exerciseNumber]="exerciseNumberSelected"></app-ide>
+
+    }
+
+  </article>
+</div>

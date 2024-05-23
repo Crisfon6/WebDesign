@@ -3,10 +3,11 @@
 
     <app-card [cardInfo]="cardInfo"></app-card>
     }
+
     <h1 class="pacifico-regular title">Topics</h1>
     <div class="menu">
-        @for (topic of topicsMenu; track $index) {
-        <lib-rounded-button [routerLink]="topic.route" [text]="topic.name" class="pacifico-regular" [background]="'#8338ec'" [icon]="topic.icon!">
+        @for (topic of topics; track $index) {
+        <lib-rounded-button [text]="topic.name | capitalize" class="pacifico-regular" [background]="'#8338ec'" [icon]="topic.icon" [routerLink]="topic.path">
         </lib-rounded-button>
 
         }

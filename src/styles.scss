@@ -26,7 +26,13 @@ a {
     font-size: 20px;
     color: var(--pri6);
 }
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 40px;
 
+}
 @media (width<500px) {
     .menu {
         grid-template-columns: repeat(2, 1fr);
